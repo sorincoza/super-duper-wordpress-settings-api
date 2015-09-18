@@ -20,26 +20,34 @@ Then instantiate it, and add pages and menus:
 #### set_prefix( $prefix )
 Sets the current prefix to work with
 
+
 #### set_menu_position( $pos )
 Sets the position (or priority) in the menu where we will start inserting items.
+
 
 #### set_menu_icon( $icon )
 Expects a URL.
 
+
 #### add_menu_separator( $separator_id = false )
 Adds a separator, with optional ID.
+
 
 #### add_menu_page( $title )
 Adds a page to the menu. If a menu was not defined by this time, a generic menu will be created
 
+
 #### add_submenu_page( $title )
 Adds a subpage under the current page.
+
 
 #### add_node( $id, $title, $parent, $href, $group, $meta )
 Adds a node to the top admin bar.
 
+
 #### add_section( $title, $description = '' )
 Adds a new section to the current page or subpage. If no current page, one will be created.
+
 
 #### add_option(  )
 Adds an option to the current section. If no section, one will be created.
@@ -102,4 +110,5 @@ This class recognizes certain keywords. As a consequence, it is possible to use:
  	->add_section(...)
  	..... and so on .....
 
+;  // don't forget the semocolon at the end 
 ```
